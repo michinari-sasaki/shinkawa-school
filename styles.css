@@ -54,11 +54,33 @@ h2 {
   height: 140px;
   object-fit: cover;
   display: block;
-  background: #e0e8f0;
+  background: #c8ddf0;
+}
+
+.school-thumb {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(135deg, #4a90d9, #74b3f0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.95em;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .school-card-body {
   padding: 12px;
+}
+
+.school-card iframe {
+  width: 100%;
+  height: 160px;
+  border: none;
+  display: block;
 }
 
 .school-card-body h3 {
