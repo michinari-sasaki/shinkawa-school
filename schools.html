@@ -4,26 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>荒川3丁目から通える小学校まとめ</title>
-<style>
-  body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f9f9f9; color: #333; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #4a90d9; padding-bottom: 8px; }
-  h2 { font-size: 1.1em; margin-top: 30px; }
-  .winner { background: #fffbe6; border: 2px solid #f5a623; border-radius: 8px; padding: 15px; margin-bottom: 30px; }
-  .winner h2 { color: #c07000; margin-top: 0; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
-  th { background: #4a90d9; color: white; padding: 8px; text-align: left; }
-  td { padding: 8px; border-bottom: 1px solid #ddd; vertical-align: top; }
-  tr:nth-child(even) { background: #f0f5ff; }
-  .highlight { color: #c00; font-weight: bold; }
-  .score { font-size: 1.2em; font-weight: bold; color: #4a90d9; }
-  .note { font-size: 0.8em; color: #888; margin-top: 20px; }
-  .tag { display: inline-block; background: #e0f0ff; border-radius: 4px; padding: 2px 6px; margin: 2px; font-size: 0.8em; }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <h1>荒川3丁目から通える小学校まとめ</h1>
 <p>荒川区の隣接校選択制により、以下の4校から選択できます。</p>
+
+<!-- 学校サムネイル一覧 -->
+<div class="school-cards">
+  <div class="school-card">
+    <img src="images/dai3haketa.jpg" alt="第三峡田小学校" onerror="this.style.background='#c8ddf0';this.alt='第三峡田小学校'">
+    <div class="school-card-body">
+      <h3>第三峡田小学校 <span class="highlight">★おすすめ</span></h3>
+      <p>ICTモデル・SDGs・体力優秀・特別支援<br>徒歩8〜12分 / 154人</p>
+    </div>
+  </div>
+  <div class="school-card">
+    <img src="images/haketa.jpg" alt="峡田小学校" onerror="this.style.background='#c8ddf0';this.alt='峡田小学校'">
+    <div class="school-card-body">
+      <h3>峡田小学校</h3>
+      <p>ネイティブ英語教師常勤・放課後教室<br>徒歩5〜15分（学区内）/ 423人</p>
+    </div>
+  </div>
+  <div class="school-card">
+    <img src="images/dai2haketa.jpg" alt="第二峡田小学校" onerror="this.style.background='#c8ddf0';this.alt='第二峡田小学校'">
+    <div class="school-card-body">
+      <h3>第二峡田小学校</h3>
+      <p>都デジタル推進実践校・ロボットプログラミング<br>徒歩7〜10分 / 285人</p>
+    </div>
+  </div>
+  <div class="school-card">
+    <img src="images/dai9haketa.jpg" alt="第九峡田小学校" onerror="this.style.background='#c8ddf0';this.alt='第九峡田小学校'">
+    <div class="school-card-body">
+      <h3>第九峡田小学校</h3>
+      <p>芝生校庭・町屋駅至近・多言語対応<br>徒歩10〜15分 / 206人</p>
+    </div>
+  </div>
+</div>
 
 <!-- 総合1位 -->
 <div class="winner">
@@ -46,6 +64,17 @@
     <tr><td>教員1人あたり児童数</td><td>約7.7人（区内最少水準）</td></tr>
     <tr><td>進学中学</td><td>第一中学校</td></tr>
   </table>
+</div>
+
+<!-- 特記事項：学区外から通う方法 -->
+<div class="info-box">
+  <h2>特記事項：指定学区外の学校に通う方法</h2>
+  <ul>
+    <li><strong>隣接区域選択制（荒川区）</strong>：指定校に加え、隣接する学区の学校を1校選択できます。毎年1月頃に申請受付。定員を超えた場合は抽選。</li>
+    <li><strong>区域外就学（転居等の事情）</strong>：引越し・保護者の勤務地などの事情がある場合、教育委員会に申請して学区外通学が認められることがあります。</li>
+    <li><strong>私立小学校</strong>：学区に関係なく通学可能。荒川区内・近隣には複数の私立校があります。</li>
+    <li><strong>申請窓口</strong>：荒川区教育委員会事務局 学務課（03-3802-3111 内線3333）</li>
+  </ul>
 </div>
 
 <!-- 比較表 -->
@@ -135,7 +164,8 @@
 <p class="note">
   ※ 学力テストの学校別結果は非公開のため、都・区からの指定実績・クラスサイズ・教員比率をもとに独自集計。<br>
   ※ 隣接校選択の詳細は荒川区教育委員会（03-3802-3111 内線3333）へご確認ください。<br>
-  ※ 情報は2025年度時点のものです。
+  ※ 情報は2025年度時点のものです。<br>
+  ※ サムネイル画像は <code>images/</code> フォルダに各校の画像（dai3haketa.jpg 等）を配置してください。
 </p>
 
 </body>
