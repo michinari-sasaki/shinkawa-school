@@ -1,0 +1,153 @@
+body {
+  font-family: sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.4em;
+  border-bottom: 2px solid #4a90d9;
+  padding-bottom: 8px;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-top: 30px;
+}
+
+/* 1位カード */
+.winner {
+  background: #fffbe6;
+  border: 2px solid #f5a623;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.winner h2 {
+  color: #c07000;
+  margin-top: 0;
+}
+
+/* 学校カード一覧 */
+.school-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.school-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(50% - 8px);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.school-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  background: #c8ddf0;
+}
+
+.school-thumb {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(135deg, #4a90d9, #74b3f0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.95em;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.school-card-body {
+  padding: 12px;
+}
+
+.school-card iframe {
+  width: 100%;
+  height: 160px;
+  border: none;
+  display: block;
+}
+
+.school-card-body h3 {
+  font-size: 1em;
+  margin: 0 0 6px;
+}
+
+.school-card-body p {
+  font-size: 0.85em;
+  margin: 0;
+  color: #555;
+}
+
+/* テーブル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+th {
+  background: #4a90d9;
+  color: white;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+tr:nth-child(even) {
+  background: #f0f5ff;
+}
+
+/* 特記事項ボックス */
+.info-box {
+  background: #f0f7ff;
+  border-left: 4px solid #4a90d9;
+  border-radius: 4px;
+  padding: 14px 16px;
+  margin: 24px 0;
+}
+
+.info-box h2 {
+  margin-top: 0;
+  color: #2a6ab0;
+}
+
+.info-box ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+
+/* その他 */
+.highlight { color: #c00; font-weight: bold; }
+.score { font-size: 1.2em; font-weight: bold; color: #4a90d9; }
+.note { font-size: 0.8em; color: #888; margin-top: 20px; }
+.tag {
+  display: inline-block;
+  background: #e0f0ff;
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin: 2px;
+  font-size: 0.8em;
+}
